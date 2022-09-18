@@ -1,2 +1,61 @@
 .hero {
+    background-color: var(--blue);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hero-text {
+    color: var(--white);
+}
+.hero-text > h2 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 65px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.hero-text > h1 {
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 98px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+span.red-text {
+    color: var(--red) !important;
+}
+.hero-text > button {
+    font-family: 'Open Sans';
+    border: 3px solid var(--red);
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 49px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+.hero > .light1 {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background-color: var(--white);
+    filter: blur(250px);
+    transform: translate(-180%, -110%);
+    z-index: 2;
+}
+.hero > .light2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: var(--red);
+    filter: blur(250px);
+    transform: translate(140%, 0%);
+    z-index: 2;
 }

@@ -1,0 +1,111 @@
+.projects {
+    min-height: 100vh;
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects > h2 {
+    color: var(--white);
+    font-family: 'Roboto Mono';
+    font-style: ;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 110px 0;
+}
+.projects > div.project {
+    width: 60%;
+    min-height: 150px;
+    display: flex;
+    margin-bottom: 150px;
+}
+.projects > div.project.reversed {
+    flex-direction: row-reverse !important;
+}
+.projects > div.project.reversed > .text {
+    margin-left: 70px !important;
+}
+.projects > div.project.reversed > .image > img {
+    box-shadow: -23px 32px 0px 4px var(--red);
+}
+
+.projects > div.project > .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects > div.project > .image > img {
+    width: 100%;
+    box-shadow: 23px 32px 0px 4px var(--red);
+}
+.projects > div.project > .text {
+    width: 50%;
+    color: var(--white);
+    position: relative;
+}
+.projects > div.project > .text > h3 {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+.projects > div.project > .text > p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0;
+}
+.projects > div.project > .text > img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+.projects > div.project > .text > .github {
+    right: 25px;
+}
+.projects > div.project > .text > .preview {
+    right: 60px;
+}
+.projects > button {
+    font-family: 'Open Sans';
+    border: 3px solid var(--red);
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 49px;
+    padding: 5px 34px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.projects > .light1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--red);
+    filter: blur(190px);
+    transform: translate(200%, 50%);
+}
+.projects > .light2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--white);
+    filter: blur(154px);
+    transform: translate(-320%, 230%);
+}
+.projects > .light3 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: var(--white);
+    filter: blur(154px);
+    transform: translate(290%, 360%);
+}
