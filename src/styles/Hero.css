@@ -1,3 +1,14 @@
+@keyframes heroAnimation {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 .hero {
     background-color: var(--blue);
     height: 100vh;
@@ -17,6 +28,9 @@
     line-height: 65px;
     text-transform: capitalize;
     margin-bottom: 0;
+    user-select: none;
+    animation: heroAnimation 1s ease-in-out 0s forwards;
+    opacity: 0;
 }
 .hero-text > h1 {
     font-family: 'Roboto Mono';
@@ -25,11 +39,14 @@
     line-height: 98px;
     text-transform: capitalize;
     margin-top: 10px;
+    user-select: none;
+    animation: heroAnimation 1s ease-in-out 0.3s forwards;
+    opacity: 0;
 }
 span.red-text {
     color: var(--red) !important;
 }
-.hero-text > button {
+.hero-text > .hero-btn {
     font-family: 'Open Sans';
     border: 3px solid var(--red);
     border-radius: 50px;
@@ -40,6 +57,12 @@ span.red-text {
     line-height: 49px;
     padding: 5px 30px;
     cursor: pointer;
+    opacity: 0;
+    animation: heroAnimation 1s ease-in-out 0.6s forwards;
+    transition: background-color 0.2s ease-in-out 0s;
+}
+.hero-text > .hero-btn:hover {
+    background-color: var(--red);
 }
 .hero > .light1 {
     position: absolute;

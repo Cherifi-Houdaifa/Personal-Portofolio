@@ -9,22 +9,22 @@ import twitter from '../assets/twitter.svg';
 export default function ContactMe() {
     return (
         <>
-            <section className="contactme">
+            <section className="contactme" id='contactme'>
                 <div className="waves-3">
                     <img src={waves3} alt="" />
                 </div>
                 <h2>Contact Me</h2>
                 <div className="links">
-                    <a href="#">
+                    <a href="https://github.com/Cherifi-Houdaifa" target="_blank">
                         <img src={github} alt="" />
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/Cherifi-Houdaifa" target="_blank">
                         <img src={email} alt="" />
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/Cherifi-Houdaifa" target="_blank">
                         <img src={linkedin} alt="" />
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/Cherifi-Houdaifa" target="_blank">
                         <img src={twitter} alt="" />
                     </a>
                 </div>

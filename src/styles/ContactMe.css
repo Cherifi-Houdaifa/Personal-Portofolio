@@ -13,6 +13,7 @@
     font-weight: 500;
     font-size: 50px;
     color: var(--white);
+    user-select: none;
 }
 .contactme > .links {
     display: flex;
@@ -24,6 +25,10 @@
 }
 .contactme > .links > a {
     width: 80px;
+    transition: transform 0.2s ease-in-out 0s;
+}
+.contactme > .links > a:hover {
+    transform: scale(1.1);
 }
 .contactme > .waves-3 {
     width: 100%;

@@ -8,7 +8,7 @@ import preview from '../assets/preview.svg';
 
 export default function Projects() {
     return (
-        <section className="projects">
+        <section className="projects" id='projects'>
             <h2>My Projects</h2>
             <div className="project">
                 <div className="text">
@@ -18,8 +18,8 @@ export default function Projects() {
                         <br />I made using Firebase &<br />
                         ReactJs.
                     </p>
-                    <img src={github} alt="" className="github" />
-                    <img src={preview} alt="" className="preview" />
+                    <a target="_blank" href="https://github.com/Cherifi-Houdaifa/ITUBE" className="github"><img src={github} alt="" /></a>
+                    <a target="_blank" href="https://itube-81b46.web.app/" className="preview"><img src={preview} alt=""  /></a>
                 </div>
                 <div className="image">
                     <img src={itube} alt="" />
@@ -34,8 +34,8 @@ export default function Projects() {
                         provide weather data<br />
                         for a specefic city.
                     </p>
-                    <img src={github} alt="" className="github" />
-                    <img src={preview} alt="" className="preview" />
+                    <a target="_blank" href="https://github.com/Cherifi-Houdaifa/Weather-App" className="github"><img src={github} alt="" /></a>
+                    <a target="_blank" href="https://cherifi-houdaifa.github.io/Weather-App/" className="preview"><img src={preview} alt=""  /></a>
                 </div>
                 <div className="image">
                     <img src={weatherApp} alt="" />
@@ -51,14 +51,15 @@ export default function Projects() {
                         <br />
                         each card once.
                     </p>
-                    <img src={github} alt="" className="github" />
-                    <img src={preview} alt="" className="preview" />
+                    <a target="_blank"  href="https://github.com/Cherifi-Houdaifa/Memory-Card-Game" className="github"><img src={github} alt="" /></a>
+                    <a target="_blank" href="https://cherifi-houdaifa.github.io/Memory-Card-Game/" className="preview"><img src={preview} alt=""  /></a>
+                    
                 </div>
                 <div className="image">
                     <img src={memoryCard} alt="" />
                 </div>
             </div>
-            <button>See More</button>
+            <a href='https://github.com/Cherifi-Houdaifa?tab=repositories' target="_blank">See More</a>
             <div className='light1'></div>
             <div className='light2'></div>
             <div className='light3'></div>

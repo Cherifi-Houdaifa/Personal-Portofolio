@@ -6,7 +6,7 @@ import image from '../assets/image.jpg';
 
 export default function About() {
     return (
-        <section className="about">
+        <section className="about" id='about'>
             <div className="waves-1">
                 <img src={waves1} alt="" />
             </div>
@@ -22,9 +22,16 @@ export default function About() {
                         I started programming
                         <br />
                         because I was bored,
-                        <br />I took <a href="#">CS50</a> in 2022, and I plan on
+                        <br />I took
+                        <a href="https://certificates.cs50.io/8e0f03d2-a911-4c56-97be-046ec41d3c49.pdf?size=letter" target="_blank">
+                            CS50
+                        </a>
+                        in 2022, and I plan on
                         <br />
-                        finishing <a href="#">The Odin Project</a>
+                        finishing
+                        <a href="https://www.theodinproject.com/" target="_blank">
+                            The Odin Project
+                        </a>
                         <br />
                         Curriculum by the end of
                         <br />
@@ -35,8 +42,8 @@ export default function About() {
             <div className="waves-2">
                 <img src={waves2} alt="" />
             </div>
-            <div className='light1'></div>
-            <div className='light2'></div>
+            <div className="light1"></div>
+            <div className="light2"></div>
         </section>
     );
 }

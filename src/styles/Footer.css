@@ -12,6 +12,7 @@ footer {
     font-weight: 400;
     font-size: 4vw;
     color: var(--white);
+    user-select: none;
 }
 @media screen and (max-width: 475px) {
     footer {
