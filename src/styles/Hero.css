@@ -59,3 +59,99 @@ span.red-text {
     transform: translate(140%, 0%);
     z-index: 2;
 }
+
+@media screen and (min-width: 1440px) {
+    .hero-text > h2 {
+        font-size: 40px;
+    }
+    .hero-text > h1 {
+        font-size: 66px;
+    }
+    .hero-text > button {
+        padding: 15px 50px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .hero-text > h2 {
+        font-size: 26px;
+    }
+    .hero-text > h1 {
+        font-size: 44px;
+    }
+    .hero-text > button {
+        padding: 5px 25px;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-text > h2 {
+        font-size: 28px;
+    }
+    .hero-text > h1 {
+        font-size: 36px;
+        line-height: 64px;
+        margin-top: 5px;
+    }
+    .hero-text > button {
+        padding: 5px 25px;
+        font-size: 24px;
+    }
+    .hero > .light1 {
+        transform: translate(-150%, -110%);
+    }
+    .hero > .light2 {
+        transform: translate(120%, 0%);
+    }
+}
+@media screen and (max-width: 476px) {
+    .hero-text > h2 {
+        font-size: 24px;
+    }
+    .hero-text > h1 {
+        font-size: 28px;
+        line-height: 58px;
+        margin-top: 5px;
+    }
+    .hero-text > button {
+        margin-top: 20px;
+        padding: 5px 25px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hero-text > h2 {
+        font-size: 20px;
+    }
+    .hero-text > h1 {
+        font-size: 26px;
+        line-height: 58px;
+        margin-top: 5px;
+    }
+    .hero-text > button {
+        margin-top: 20px;
+        padding: 3px 20px;
+        font-size: 16px;
+    }
+    .hero > .light1 {
+        transform: translate(-100%, -110%);
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero-text > h2 {
+        font-size: 16px;
+    }
+    .hero-text > h1 {
+        font-size: 22px;
+        line-height: 58px;
+        margin-top: 5px;
+    }
+    .hero-text > button {
+        margin-top: 20px;
+        padding: 3px 20px;
+        font-size: 16px;
+    }
+    .hero > .light1 {
+        transform: translate(-100%, -110%);
+    }
+}

@@ -10,6 +10,11 @@ footer {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 4vw;
     color: var(--white);
+}
+@media screen and (max-width: 475px) {
+    footer {
+        font-size: 24px;
+    }
 }

@@ -9,7 +9,7 @@
 .projects > h2 {
     color: var(--white);
     font-family: 'Roboto Mono';
-    font-style: ;
+    font-style: normal;
     font-weight: 500;
     font-size: 50px;
     margin: 110px 0;
@@ -24,7 +24,7 @@
     flex-direction: row-reverse !important;
 }
 .projects > div.project.reversed > .text {
-    margin-left: 70px !important;
+    margin-left: 70px;
 }
 .projects > div.project.reversed > .image > img {
     box-shadow: -23px 32px 0px 4px var(--red);
@@ -108,4 +108,83 @@
     background-color: var(--white);
     filter: blur(154px);
     transform: translate(290%, 360%);
+}
+@media screen and (min-width: 1440px) {
+    .projects > div.project > .text > h3 {
+        font-size: 36px;
+    }
+    .projects > div.project > .text > p {
+        font-size: 26px;
+    }
+    .projects > button {
+        font-size: 28px;
+        padding: 10px 40px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .projects > div.project > .text > h3 {
+        font-size: 30px;
+    }
+    .projects > div.project > .text > p {
+        font-size: 20px;
+    }
+    .projects > div.project.reversed > .text > .github {
+        right: 0px;
+    }
+    .projects > div.project.reversed > .text > .preview {
+        right: 35px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .projects > div.project > .text > h3 {
+        font-size: 26px;
+    }
+    .projects > div.project > .text > p {
+        font-size: 18px;
+    }
+    .projects > div.project.reversed > .text > p {
+        font-size: 16px !important;
+    }
+    .projects > div.project.reversed > .text > .github {
+        right: -15px;
+    }
+    .projects > div.project.reversed > .text > .preview {
+        right: 20px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .projects > div.project > .image {
+        display: none;
+    }
+    .projects > div.project.reversed > .text {
+        margin-left: 0;
+    }
+    .projects > div.project {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects > div.project > .text {
+        width: 80%;
+    }
+    .projects > div.project.reversed > .text > .github {
+        right: 25px;
+    }
+    .projects > div.project.reversed > .text > .preview {
+        right: 60px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .projects > h2 {
+        font-size: 32px;
+    }
+    .projects > div.project > .text > h3 {
+        font-size: 24px;
+    }
+    .projects > div.project > .text > p {
+        font-size: 18px;
+    }
+    .projects > div.project > .text > img {
+        bottom: -15px;
+    }
 }

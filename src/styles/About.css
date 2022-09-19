@@ -11,7 +11,7 @@
     width: 100%;
     height: 130px;
     position: absolute;
-    top: 0;
+    top: -2px;
 }
 .about > .waves-1 > img {
     height: 100%;
@@ -21,7 +21,7 @@
     width: 100%;
     height: 130px;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
 }
 .about > .waves-2 > img {
     height: 100%;
@@ -55,7 +55,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 24px;
     margin: 0;
 }
 .about > .about-text > .text > p > a {
@@ -77,4 +77,51 @@
     background-color: var(--white);
     filter: blur(250px);
     transform: translate(-175%, 0%);
+}
+@media screen and (min-width: 1440px) {
+    .about > .about-text > .text > h2 {
+        font-size: 54px;
+    }
+    .about > .about-text > .text > p {
+        font-size: 29px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .about > .about-text > .text > h2 {
+        font-size: 34px;
+    }
+    .about > .about-text > .text > p {
+        font-size: 22px;
+    }
+    .about > .about-text > .image {
+        height: 75%;
+    }
+}
+@media screen and (max-width: 651px) {
+    .about > .about-text > .text {
+        margin: 0;
+    }
+    .about > .about-text > .text > h2 {
+        font-size: 30px;
+    }
+    .about > .about-text > .text > p {
+        font-size: 20px;
+    }
+    .about > .about-text > .image {
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about > .about-text > .text {
+        margin: 0;
+    }
+    .about > .about-text > .text > h2 {
+        font-size: 26px;
+    }
+    .about > .about-text > .text > p {
+        font-size: 16px;
+    }
+    .about > .about-text > .image {
+        display: none;
+    }
 }
