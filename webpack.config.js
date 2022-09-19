@@ -1,8 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
+const mode = "development";
+
 module.exports = {
-    mode: 'development',
+    mode: mode,
     entry: {
         main: path.resolve(__dirname, './src/index.js'),
     },
@@ -11,7 +13,7 @@ module.exports = {
         filename: '[name].[contenthash].js',
         clean: true,
     },
-    devtool: "eval-source-map",
+    devtool: mode === "development" ? "eval-source-map" : false,
     devServer: {
         static: path.resolve(__dirname, './build'),
         port: '3000',
@@ -25,7 +27,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: ["style-loader", 'css-loader'],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -45,6 +47,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: path.resolve(__dirname, 'public/index.html'),
+            favicon: path.resolve(__dirname, 'public/favicon.ico'),
         })
     ],
 };
