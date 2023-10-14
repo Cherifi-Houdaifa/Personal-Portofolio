@@ -14,7 +14,7 @@ export default function Hero() {
                 </h2>
                 <h1>
                     I'm <span className="red-text">Houdaifa</span>
-                    <br />A Bored Web Developer
+                    <br />An aspiring Web Developer
                 </h1>
                 <button onClick={scroll} className="hero-btn">Explore</button>
             </div>
